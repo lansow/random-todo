@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>random todo</title>
   </head>
   <body>
-    <script type="module" src="./app.js"></script>
+    <div class="wrapper">
+      <header>random todo</header>
+      <div>
+        <input type="text" class="todo-value" placeholder="add you new todo" />
+        <button class="add-todo"><i class="fas fa-plus"></i></button>
+      </div>
+      <ul class="todo-list"></ul>
+      <div class="footer">
+        <span class="count-span"
+          >you have <span class="todo-count"></span> pending tasks</span
+        >
+        <button type="button" class="clear-todos">clear all</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
